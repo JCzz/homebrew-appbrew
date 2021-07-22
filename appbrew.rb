@@ -4,8 +4,8 @@
 class Appbrew < Formula
   desc "My description"
   homepage "kapps.dev"
-  url "https://github.com/JCzz/appbrew/archive/refs/tags/v0.0.30.tar.gz"
-  sha256 "a250974591a4844e7752c09628c680c8fe12e6a5e15f6a568786645b264f6ae8"
+  url "https://github.com/JCzz/homebrew-appbrew/archive/refs/tags/v0.0.34.tar.gz"
+  sha256 "a250974591a4844e7752c09628c680c8fe12e6a5e15f6a568786645b264f6ae0"
   license ""
 
   # depends_on "cmake" => :build
@@ -14,8 +14,9 @@ class Appbrew < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "./configure", *std_configure_args, "--disable-silent-rules"
+    # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    bin.install "appbrew"
   end
 
   test do
