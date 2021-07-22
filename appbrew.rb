@@ -5,7 +5,7 @@ class Appbrew < Formula
   desc "My description"
   homepage "kapps.dev"
   url "https://github.com/JCzz/homebrew-appbrew/releases/download/v0.0.50/appbrew.v0.0.50.tgz"
-  sha256 "28643987b6f9d770601ffaf2e67120a8b5ab0ff230077e1eb93cd9f37a7b8ef0"
+  sha256 "208f0ad0e93775121f50a40cc30dc53f4898a2a26b82384f23e401698e205fc6"
   license ""
 
   # depends_on "cmake" => :build
