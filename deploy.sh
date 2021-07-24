@@ -9,5 +9,5 @@ git add .
 git commit -m "form"
 git push
 
-gh release create v0.0.51 appbrew.v0.0.51.tgz
+gh release create v0.0.52 appbrew.v0.0.52.tgz
 # ./*.tgz

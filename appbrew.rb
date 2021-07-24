@@ -4,9 +4,29 @@
 class Appbrew < Formula
   desc "My description"
   homepage "kapps.dev"
-  url "https://github.com/JCzz/homebrew-appbrew/releases/download/v0.0.52/appbrew.v0.0.52.tgz"
-  sha256 "1f7e21fcf3891f06a9f14b8d439e919353f9bd24cb23867b4706da11e9fd45a9"
-  license ""
+  on_macos do
+    if Hardware::CPU.arm?
+        url "https://github.com/JCzz/homebrew-appbrew/releases/download/v0.0.52/appbrew.v0.0.52.tgz"
+        sha256 "1f7e21fcf3891f06a9f14b8d439e919353f9bd24cb23867b4706da11e9fd45a9"
+        license ""
+    else
+        url "https://github.com/JCzz/homebrew-appbrew/releases/download/v0.0.52/appbrew.v0.0.52.tgz"
+        sha256 "1f7e21fcf3891f06a9f14b8d439e919353f9bd24cb23867b4706da11e9fd45a9"
+        license ""
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.arm?
+        url "https://github.com/JCzz/homebrew-appbrew/releases/download/v0.0.52/appbrew.v0.0.52.tgz"
+        sha256 "1f7e21fcf3891f06a9f14b8d439e919353f9bd24cb23867b4706da11e9fd45a9"
+        license ""
+    else
+        url "https://github.com/JCzz/homebrew-appbrew/releases/download/v0.0.52/appbrew.v0.0.52.tgz"
+        sha256 "1f7e21fcf3891f06a9f14b8d439e919353f9bd24cb23867b4706da11e9fd45a9"
+        license ""
+    end
+  end
 
   # depends_on "cmake" => :build
 
