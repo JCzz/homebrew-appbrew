@@ -1,6 +1,10 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
+
+# Multiple platforms
+# From: https://github.com/vmware-tanzu/homebrew-carvel/blob/develop/kapp.rb
+
 class Appbrew < Formula
   desc "My description"
   homepage "kapps.dev"
