@@ -11,3 +11,6 @@ git push
 
 gh release create v0.0.52 appbrew.v0.0.52.tgz
 # ./*.tgz
+echo $VERSION > current_version.txt
+
+rm appbrew.v0.0.52.tgz
