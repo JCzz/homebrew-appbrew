@@ -12,12 +12,12 @@ class Appbrew < Formula
   head "https://appsyouwear.github.io/homebrew-gazelle.dev/"
   on_macos do
     if Hardware::CPU.arm?
-        url "https://appsyouwear.github.io/homebrew-gazelle.dev/gaz.arm64.v0.0.8.tgz"
-        sha256 "a7aad66cfa93036510e38620524f482c422d7455f6c54652297c7ba615f0a71f"
+        url "https://appsyouwear.github.io/homebrew-gazelle.dev/gaz.arm64.v0.0.9.tgz"
+        sha256 "a267d1ca7cec7cd1685d88c29f09795dc6907d84143efc14e2572e64fea652b4"
         license ""
     else
-        url "https://appsyouwear.github.io/homebrew-gazelle.dev/gaz.amd64.v0.0.8.tgz"
-        sha256 "ed70e04853eff2f00aba8c6790c6ae373dc89450cdd9d023a15beaa25e0ece43"
+        url "https://appsyouwear.github.io/homebrew-gazelle.dev/gaz.amd64.v0.0.9.tgz"
+        sha256 "7ade9dfb034a72ed99175916c6c9d3675a5643e842333efdbd7c25dc0b149cd1"
         license ""
     end
   end
@@ -31,7 +31,6 @@ class Appbrew < Formula
     # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
     bin.install "gaz"
-    bin.install "zserver"
   end
 
   test do
