@@ -13,11 +13,11 @@ class Appbrew < Formula
   on_macos do
     if Hardware::CPU.arm?
         url "https://appsyouwear.github.io/homebrew-gazelle.dev/gaz.arm64.v0.0.1.tgz"
-        sha256 "97c3a1a87ffd0e26e399157b72117662e5d81e0cdeacc1db6b586e072441c957"
+        sha256 "aaf98702caecd845b76b842f5dbd337286110628e9c5bdcce012e5638ad4a0eb"
         license ""
     else
         url "https://appsyouwear.github.io/homebrew-gazelle.dev/gaz.amd64.v0.0.1.tgz"
-        sha256 "ebee95cb3c1ab93738dec1014c61731bb236b0628c16adc1f03a9ba97c7b237f"
+        sha256 "9dc7d43fc7c52cb9fdc4bd56d636c5420456b463cb16491a6afcefa5ed6fb7e4"
         license ""
     end
   end
